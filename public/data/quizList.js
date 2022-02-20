@@ -2,29 +2,25 @@ const quizList = [
   {
     question: `What is the difference between a library and a framework?`,
     choices: [
-      { content: `No difference, they are the same.`, answerYn: false },
+      { content: `No difference, they are the same.`, answerYn: `N` },
       {
         content: `A library calls our code, we call the framework.`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `A framework calls our code, we call the library.`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
-    desc: `The technical difference between a framework and library lies in a term called inversion of control.
-    When you use a library, you are in charge of the flow of the application.
-    You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow.
-    It provides some places for you to plug in your code, but it calls the code you plugged in as needed.    
-    `,
+    desc: `A Library is my slave. But A framework is my master.`,
   },
   {
     question: `NextJS is a framework.`,
     choices: [
-      { content: `True`, answerYn: true },
+      { content: `True`, answerYn: `Y` },
       {
         content: `False`,
-        answerYn: false,
+        answerYn: `N`,
       },
     ],
     desc: `NextJS is an awwwwsome framework!!!`,
@@ -34,23 +30,22 @@ const quizList = [
     choices: [
       {
         content: `Create an 'about.jsx' file inside of the '/src' folder.`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `Create an 'about.jsx' file inside of the '/pages' folder.`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
-    desc: `We can make some URL by locating the file inside of the '/pages'.
-    And then we can access the URL as '/{fileName}'.`,
+    desc: `We can make some URL by locating the file inside of the '/pages'. And then we can access the URL as '/{fileName}'.`,
   },
   {
     question: `What is _app.jsx`,
     choices: [
-      { content: `It's a file for the /app URL.`, answerYn: false },
+      { content: `It's a file for the /app URL.`, answerYn: `N` },
       {
         content: `It's a blueprint that NextJS will use to build all our pages.`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
     desc: `_app.jsx is like a Door-Keeper`,
@@ -58,10 +53,10 @@ const quizList = [
   {
     question: `Can we use CSS in NextJS without installing anything else?`,
     choices: [
-      { content: `True`, answerYn: true },
+      { content: `True`, answerYn: `Y` },
       {
         content: `False`,
-        answerYn: false,
+        answerYn: `N`,
       },
     ],
     desc: `We can use css by using module.xxx.css or styled-jsx!!`,
@@ -71,11 +66,11 @@ const quizList = [
     choices: [
       {
         content: `To run code on the backend after the page is rendered.`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `To run code on the backend before the page is rendered.`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
     desc: `For the powerful SSR`,
@@ -83,14 +78,14 @@ const quizList = [
   {
     question: `What file do we have to create to get a URL like this: /posts/:id`,
     choices: [
-      { content: `src/pages/posts/id.jsx`, answerYn: false },
+      { content: `src/pages/posts/id.jsx`, answerYn: `N` },
       {
         content: `src/pages/posts/{id}.jsx`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `src/pages/posts/[id].jsx`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
     desc: `We can use the dynamic params by using '[]'.`,
@@ -100,15 +95,15 @@ const quizList = [
     choices: [
       {
         content: `src/pages/posts/id/section/sectionId/comments/commentId.jsx`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `src/pages/posts/{id}/section/{sectionId}/comments/{commentId}.jsx`,
-        answerYn: false,
+        answerYn: `N`,
       },
       {
         content: `src/pages/posts/[...id].jsx`,
-        answerYn: true,
+        answerYn: `Y`,
       },
     ],
     desc: `We can catch the multiple params by using '[...]'.`,

@@ -1,5 +1,5 @@
-import css from 'styled-jsx/css';
 import palette from '../public/style/palette';
+import css from 'styled-jsx/css';
 
 const styled = css`
   .header {

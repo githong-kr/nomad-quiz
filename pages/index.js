@@ -1,9 +1,10 @@
 import quizList from '../public/data/quizList';
 import shuffle from '../lib/shuffle';
+
 import Header from '../components/Header';
 import Quiz from '../components/Quiz';
-import palette from '../public/style/palette';
 
+import palette from '../public/style/palette';
 import css from 'styled-jsx/css';
 
 const styled = css`
@@ -14,8 +15,11 @@ const styled = css`
   .quizListWrapper {
     height: 95vh;
     background-color: ${palette.light.primary}66;
-    overflow: auto;
+    word-break: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
 `;
 

@@ -1,5 +1,5 @@
-import css from 'styled-jsx/css';
 import palette from '../public/style/palette';
+import css from 'styled-jsx/css';
 
 const styled = css`
   .rad-label {
@@ -63,6 +63,7 @@ const styled = css`
     color: hsl(0, 0%, 60%);
     margin-left: 14px;
     font-size: 18px;
+    max-width: 100%;
 
     transition: 0.3s;
   }
